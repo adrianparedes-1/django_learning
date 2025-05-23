@@ -53,6 +53,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "django" },
     { name = "django-mysql" },
+    { name = "django-rest-framework" },
     { name = "mysqlclient" },
     { name = "pymysql" },
     { name = "uvicorn" },
@@ -62,6 +63,7 @@ dependencies = [
 requires-dist = [
     { name = "django", specifier = ">=5.2.1" },
     { name = "django-mysql", specifier = ">=4.17.0" },
+    { name = "django-rest-framework", specifier = ">=0.1.0" },
     { name = "mysqlclient", specifier = ">=2.2.7" },
     { name = "pymysql", specifier = ">=1.1.1" },
     { name = "uvicorn", specifier = ">=0.34.2" },
@@ -77,6 +79,27 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/62/00/5f5e723193db2b31abcf130303b0c9584ee70b69502f3ce146bff3c314c8/django_mysql-4.17.0.tar.gz", hash = "sha256:201efe2f9128777159b019cff8a6c1f35e891c668bb3b98b45c616f25ed5cb5b", size = 43081 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b5/dd/94da92d5d44f7a132c92b18954ec61c6608e65086602e2f0e52985ce47c9/django_mysql-4.17.0-py3-none-any.whl", hash = "sha256:d59545cfbd55edfa04c99db2e90e9f63c786b16da4c7b8fd0425f5d032dde149", size = 55335 },
+]
+
+[[package]]
+name = "django-rest-framework"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "djangorestframework" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ed/d2/61159bc6efd1bf16adc4a2a48f7ace2080d1f7aef054f606d1857cab490c/django-rest-framework-0.1.0.tar.gz", hash = "sha256:47a8f496fa69e3b6bd79f68dd7a1527d907d6b77f009e9db7cf9bb21cc565e4a", size = 969 }
+
+[[package]]
+name = "djangorestframework"
+version = "3.16.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7d/97/112c5a72e6917949b6d8a18ad6c6e72c46da4290c8f36ee5f1c1dcbc9901/djangorestframework-3.16.0.tar.gz", hash = "sha256:f022ff46613584de994c0c6a4aebbace5fd700555fbe9d33b865ebf173eba6c9", size = 1068408 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/eb/3e/2448e93f4f87fc9a9f35e73e3c05669e0edd0c2526834686e949bb1fd303/djangorestframework-3.16.0-py3-none-any.whl", hash = "sha256:bea7e9f6b96a8584c5224bfb2e4348dfb3f8b5e34edbecb98da258e892089361", size = 1067305 },
 ]
 
 [[package]]
